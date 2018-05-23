@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+
+  </head>
+  <body>
+
+  </body>
+  <script src="/ws.js"></script>
+  <script src="/public/js/socket.js"></script>
+
+  <script>
+    var socket = io();
+    socket.OnConnect(function() {
+      console.log("Connected!");
+    });
+
+    socket.OnDisconnect(function() {
+      console.log("Disconnected!");
+    });
+  </script>
+</html>
